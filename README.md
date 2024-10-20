@@ -17,6 +17,8 @@ cd nucleotide-transformer
 pip install .
 pip install jax[cuda]
 ```
+## 3. put the files in this repo to this directory
+
 ## 4. run the script with sbatch
 ```
 sbatch submit.sbatch
