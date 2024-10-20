@@ -18,12 +18,12 @@ pip install .
 pip install jax[cuda]
 ```
 ## 3. put the files in this repo to this directory
-## 4. put the files in this repo to this directory
-run the ```download_models.py``` script to download pretrained models.
+## 4. Run model downloading script to access pretrained models
+As script submitted to the cluster cannot access internet, you need to run the ```download_models.py``` script to download pretrained models before actural task.
 ```
 python download_models.py
 ```
-this script will download one NT transformer model and one Segment NT model to ```~/.cache``` directory. There is a list of models you can access. Just copy and paste the name 
+this script will download one NT transformer model and one Segment NT model to the ```~/.cache``` directory. There is a list of models you can access. 
 
 **Warning: the models are quite big (~5-10GB), downloading too much models might cause Disk quota issue. You can always check your quota with command ```quota```. If you ran into such issue, you can delete ```~/.cache/nucleotide_transformer/``` directory to free up space**
 ## 5. run the script with sbatch
