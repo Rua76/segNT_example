@@ -11,4 +11,7 @@
 
 module load cuda/12.2
 
-python test_segNT.py
+# run NT transformer example code
+python NT_transformer_example.py
+# run segment NT example code
+python segNT_example.py
