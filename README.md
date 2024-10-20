@@ -23,7 +23,8 @@ run the ```download_models.py``` script to download pretrained models.
 ```
 python download_models.py
 ```
-this script will download one NT transformer model and one Segment NT model to ```~/.cache``` directory. This is under your home directory
+this script will download one NT transformer model and one Segment NT model to ```~/.cache``` directory. There is a list of models you can access. Just copy and paste the name 
+
 **Warning: the models are quite big (~5-10GB), downloading too much models might cause Disk quota issue. You can always check your quota with command ```quota```. If you ran into such issue, you can delete ```~/.cache/nucleotide_transformer/``` directory to free up space**
 ## 5. run the script with sbatch
 ```
