@@ -1,26 +1,21 @@
 # segNT sample run code
-This is a sample code to show how to load and use pretrained gpn model to generate prediction on input sequence, and how to extract embeddings
+This is a sample code to show how to load and use pretrained Nucleotide Transformers and SegmentNT to generate prediction on input sequence and extract embeddings
 
 It assume you are working on midway3 with gpu. Other running config can be changed in the ***submit.sbatch*** file
 ## 0. create a new working environment for gpn with mamba
 ```
-mamba create -n gpn_test python=3.8
-mamba activate gpn_test
+mamba create -n segNT python=3.9
+mamba activate segNT
 ```
-## 1. install gpn on your working environment with pip
+## 1. clone this repo to your working directory
 ```
-pip install git+https://github.com/songlab-cal/gpn.git
+git clone https://github.com/instadeepai/nucleotide-transformer
+cd nucleotide-transformer
 ```
-## 2. clone this repo to your working directory
+## 2. Install the package needed, also update jax to support cuda
 ```
-git clone https://github.com/Rua76/gpn_sample
-cd gpn_sample
-```
-## 3. install *git-lfs* and clone pretrained gpn model from huggingface
-suppose you are using mamba
-```
-mamba install git-lfs
-git clone https://huggingface.co/songlab/gpn-brassicales
+pip install .
+pip install jax[cuda]
 ```
 ## 4. run the script with sbatch
 ```
