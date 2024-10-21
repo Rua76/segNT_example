@@ -1,6 +1,8 @@
 # segNT sample run code
 This is a sample code to show how to load and use pretrained Nucleotide Transformers and SegmentNT to generate prediction on input sequence and extract embeddings
 
+**Note: the NT transformer and segNT are written with a framework called Jax, which I don't quite familiar. By default they run with CPU. I managed to make NT transformer to run on GPU, but segNT is still on CPU**
+
 It assume you are working on midway3 with gpu. Other running config can be changed in the ***submit.sbatch*** file
 ## 0. create a new working environment for gpn with mamba
 ```
